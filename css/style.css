@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+}
+
+.title {
+    font-size: 34px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0 0 1em rgb(51, 51, 51);
+    margin: 40px auto;
+}
+
+.wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 20px solid rgb(51, 51, 51);
+    background-color: #fff;
+    text-align: center;
+}
+
+.center h2 {
+    font-size: 28px;
+}
+
+.reg {
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.control {
+    font-size: 12px;
+    text-transform: capitalize;
+    height: 80px;
+}
+
+.count,
+.start,
+.strict {
+    float: left;
+    margin-left: 20px;
+}
+
+.strict {
+    position: relative;
+}
+
+.strict .dot {
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 50%;
+}
+
+.active {
+    background-color: red;
+}
+
+.no-active {
+    background-color: rgb(51, 51, 51);
+}
+
+.btn {
+    width: 25px;
+    height: 25px;
+    border: 5px solid rgb(51, 51, 51);
+    border-radius: 50%;
+    text-indent: -999999px;
+    margin-bottom: 5px;
+    outline: 0;
+    box-shadow: 0px 1px 2px 0 rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: 0px 0px 0px 0 rgb(51, 51, 51)
+}
+
+.btn-start {
+    background-color: red;
+}
+
+.btn-strict {
+    background-color: yellow;
+}
+
+.num {
+    width: 50px;
+    height: 30px;
+    border: 1px solid rgb(51, 51, 51);
+    background-color: rgb(50, 5, 12);
+    border-radius: 5px;
+    color: #fff;
+    line-height: 28px;
+    font-size: 25px;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    border: 3px solid rgb(51, 51, 51);
+    background-color: rgb(51, 51, 51);
+}
+
+.off,
+.on {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.off {
+    left: -35px;
+}
+
+.on {
+    right: -35px;
+}
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 19px;
+    border-radius: 5px;
+    background-color: lightblue;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.turnOff {
+    left: 0;
+}
+
+.turnOn {
+    right: 0;
+}
+
+.aera {
+    width: 225px;
+    height: 225px;
+    position: absolute;
+}
+
+.aera:hover.aera-active {
+    cursor: pointer;
+}
+
+.left-top {
+    left: 0;
+    top: 0;
+    border-radius: 225px 0 0 0;
+    background-color: rgb(25, 89, 25);
+    border-right: 10px solid rgb(51, 51, 51);
+    border-bottom: 10px solid rgb(51, 51, 51);
+}
+
+.right-top {
+    right: 0;
+    top: 0;
+    border-radius: 0 225px 0 0;
+    background-color: rgb(153, 25, 25);
+    border-left: 10px solid rgb(51, 51, 51);
+    border-bottom: 10px solid rgb(51, 51, 51);
+}
+
+.right-bottom {
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0 225px 0;
+    border-top: 10px solid rgb(51, 51, 51);
+    border-left: 10px solid rgb(51, 51, 51);
+    background-color: rgb(25, 25, 153);
+}
+
+.left-bottom {
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 0 225px;
+    border-top: 10px solid rgb(51, 51, 51);
+    border-right: 10px solid rgb(51, 51, 51);
+    background-color: rgb(149, 139, 55);
+}
+
+.active-4 {
+    background-color: yellow;
+}
+
+.active-3 {
+    background-color: blue;
+}
+
+.active-2 {
+    background-color: red;
+}
+
+.active-1 {
+    background-color: #10ff10;
+}
+
+.result {
+    font-size: 24px;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+}
